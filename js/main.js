@@ -109,6 +109,10 @@
 	};
 	carousel();
 
+	$('.navbar-nav>li>a').on('click', function(){
+		$('.navbar-collapse').collapse('hide');
+	});
+
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
 		// 	 timer;
