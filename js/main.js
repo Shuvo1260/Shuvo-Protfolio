@@ -113,6 +113,11 @@
 		$('.navbar-collapse').collapse('hide');
 	});
 
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+		$('.navbar-collapse').collapse('hide');
+	}
+	
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
 		// 	 timer;
